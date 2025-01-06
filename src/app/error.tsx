@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const error = () => {
+const Error = () => {
   return (
     <div className='flex flex-col justify-center items-center w-full h-screen'>
       <Image className='w-[500px]' width={300} height={300} src={'/notFound.png'} alt='notFound'/>
@@ -13,4 +13,4 @@ const error = () => {
   )
 }
 
-export default error
+export default Error

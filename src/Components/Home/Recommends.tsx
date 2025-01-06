@@ -10,9 +10,9 @@ const Recommends = () => {
         .then(data => setMenus(data))
     },[])
   return (
-    <div>
+    <div className='grid grid-cols-3 gap-4 w-[80%] mx-auto'>
             {
-                menus.map((menu,idx) => <RecommendsItem key={idx} menu={menu}></RecommendsItem>)
+                menus?.map((menu,idx) => <RecommendsItem key={idx} menu={menu}></RecommendsItem>)
             }
     </div>
   )
